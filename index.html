@@ -21,16 +21,7 @@
         * {
             box-sizing: border-box;
         }
-            .rules {
-            margin-top: 18px;
-            padding: 12px 14px;
-            background: #111827;
-            border: 1px solid #374151;
-            border-radius: 10px;
-            font-size: 0.85rem;
-            line-height: 1.4;
-            opacity: 0.9;
-        }
+
         body {
             margin: 0;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -145,6 +136,17 @@
             opacity: 0.75;
         }
 
+        .rules {
+            margin-top: 18px;
+            padding: 12px 14px;
+            background: #111827;
+            border: 1px solid #374151;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+
         /* Améliorations pour tablettes / ordi */
         @media (min-width: 768px) {
             body {
@@ -161,8 +163,6 @@
                 font-size: 1.25rem;
             }
         }
-        
-        
     </style>
 </head>
 <body>
@@ -197,13 +197,13 @@
     <p id="question">Choisis une catégorie pour commencer.</p>
     <button class="main-btn" onclick="newQuestion()">Nouvelle question</button>
     <p class="hint">(Scannez le QR-code vers cette page et passez le téléphone de main en main 😉)</p>
-</div>
-    <div class="rules">
-    <strong>🍺 Règle du jeu :</strong><br>
-    Chacun lit sa question et suit l’action demandée.<br>
-    Refuser = boire (sauf si vous possédez un joker). Jouez avec modération.
-</div>
 
+    <div class="rules">
+        <strong>🍺 Règle du jeu :</strong><br>
+        Chacun lit sa question et suit l’action demandée.<br>
+        Refuser = boire. Jouez avec modération.
+    </div>
+</div>
 
 <script>
     // Questions avec catégories
